@@ -1,90 +1,147 @@
 <img width="2520" height="1326" alt="Screenshot 2025-10-28 010303" src="https://github.com/user-attachments/assets/c6ba19f9-de44-4e23-ace2-7e985f1d633a" /># CareerCraft — The Smarter Portfolio
 
-> A living portfolio that evolves with you — visualize your growth, track achievements, and unlock AI-powered insights to guide your next move.
+> A living portfolio that evolves with you- visualize your growth, track achievements, and unlock AI-powered insights to guide your next move.
 
 ---
 
-## 🧭 Overview
+# CareerCraft 
 
-Most portfolios tell your story — **CareerCraft** helps you understand it.  
-It blends interactive data visualization with a structured, modular layout, so you can monitor progress, showcase skills, and integrate AI-based analysis through an upcoming LLM module.
+A modern portfolio platform built with React and Vite that helps users showcase their skills, projects, and career progress through an interactive dashboard.
 
-The goal is simple:  
-To build a portfolio that feels alive, grows with you, and represents more than just a résumé.
+The application is designed with a modular architecture, making it easy to extend with backend services, AI-powered insights, and additional integrations as the platform evolves.
 
----
-
-## ✨ Key Features
-
-- Interactive Graphs: Visualize your skill growth, learning curves, and performance over time.  
-- LLM Insights (In Progress): Uses AI models to analyze data and suggest areas for improvement.  
-- Modular Design: Flexible structure that allows adding new features or APIs without major code changes.  
-- Dynamic UI Components: Each section (About, Skills, Projects, Contact) is reusable and easily customizable.  
-- Fully Responsive: Works smoothly on all screen sizes and devices.  
-- Fast & Lightweight: Built with Vite for lightning-fast builds and clean performance.  
+**Demo:** https://youtu.be/hyPdoXk4sH4
 
 ---
 
-## 🧱 System Architecture
+## Overview
 
-| Layer | Component | Description |
-|--------|-------------|-------------|
-| Frontend | React + Vite | Provides modular and interactive UI components |
-| Visualization | Chart.js / Recharts | Renders skill growth and performance graphs |
-| AI Engine | OpenAI / LangChain *(In Progress)* | Analyzes data and generates insights |
-| Hosting & Deployment | GitHub Pages / Vercel / Netlify | Ensures continuous deployment and scalability |
+CareerCraft is a frontend application built around a clear separation of concerns. Data collection, processing, visualization, and future AI-powered recommendations are organized into independent layers, making the application easier to maintain and extend.
+
+The project demonstrates several engineering concepts:
+
+- **Layered data flow** — input → normalization → visualization → AI insights
+- **Modular component architecture** — reusable React components with a clean project structure
+- **Interactive data visualization** — charts for representing skills, projects, and career progress
+- **Deployment-ready design** — supports deployment on GitHub Pages, Vercel, and Netlify with minimal configuration
 
 ---
 
-## 🛠️ Tech Stack
+## System Architecture
+
+```text
+User Input
+      │
+      ▼
+Data Processing
+      │
+      ▼
+JSON Data Model
+      │
+      ▼
+React Components
+      │
+      ▼
+Charts & Visualizations
+      │
+      ▼
+Interactive Dashboard
+      │
+      ▼
+Future AI Recommendation Layer
+```
+
+---
+
+## Project Workflow
+
+1. Users provide portfolio information.
+2. The application structures the data into reusable formats.
+3. React components render portfolio sections dynamically.
+4. Charts visualize skills, projects, and career progress.
+5. Future AI modules can analyze portfolio data and generate personalized recommendations.
+
+---
+
+## Key Features
+
+- Interactive portfolio dashboard
+- Modular React component architecture
+- Skill growth visualization
+- Responsive user interface
+- Reusable UI components
+- Multi-platform deployment support
+- Ready for backend and AI integration
+
+---
+## Tech Stack
 
 | Category | Technologies |
-|-----------|---------------|
-| Frontend | HTML5, CSS3, JavaScript (ES6+), React, Vite |
+|----------|--------------|
+| Frontend | React, Vite, JavaScript, HTML5, CSS3 |
 | Visualization | Recharts, Chart.js |
-| AI & Insights | OpenAI API, LangChain *(planned)* |
-| Version Control | Git & GitHub |
+| Version Control | Git, GitHub |
 | Deployment | GitHub Pages, Vercel, Netlify |
+| Future Integrations | OpenAI API, LangChain |
+
+> **Note:** AI-based recommendations are planned for future releases and are not part of the current implementation.
 
 ---
 
-## 🧩 Project Structure
+## Project Structure
 
-```
+```text
 CareerCraft/
-│
-├── public/                   # Static assets and metadata
-│   ├── index.html
-│   ├── favicon.ico
-│   └── manifest.json
+├── public/
 │
 ├── src/
-│   ├── assets/               # Images, icons, etc.
-│   ├── components/           # Reusable UI components (Navbar, Graphs, etc.)
-│   ├── pages/                # Main sections (Home, About, Skills, Projects)
-│   ├── utils/                # Helper functions and data handlers
-│   ├── App.jsx               # Root React component
-│   ├── main.jsx              # Application entry point
-│   └── index.css             # Global styles
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── utils/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
 │
-├── .gitignore
 ├── package.json
-├── README.md
-└── vite.config.js
-
+├── vite.config.js
+└── README.md
 ```
 
 ---
 
-## 🔄 Data Flow
+## Running Locally
 
-| Stage | Functionality | Example Output |
-|--------|----------------|----------------|
-| Data Input Layer | Collects skills, projects, and achievements | User fills form |
-| Processing Layer | Normalizes and structures input data | JSON schema |
-| Visualization Layer | Renders charts and insights dynamically | Growth graphs |
-| AI Insight Layer | (Planned) Generates suggestions using LLM | Skill gap advice |
-| UI Display Layer | Displays portfolio interface | Interactive dashboard |
+```bash
+git clone https://github.com/shaa18/CareerCraft.git
+
+cd CareerCraft
+
+npm install
+
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:5173
+```
+
+---
+
+
+## Future Improvements
+
+- Backend service for real-time data synchronization
+- User authentication and profile management
+- AI-powered career recommendations
+- GitHub profile integration
+- Resume analysis using LLMs
+- Docker support
+- CI/CD pipeline using GitHub Actions
+- Cloud deployment
+- Portfolio analytics dashboard
 
 ---
 
@@ -95,29 +152,6 @@ CareerCraft/
 
 <img width="2559" height="1256" alt="Screenshot 2025-10-28 005503" src="https://github.com/user-attachments/assets/ecb20665-9c7a-4b53-9c10-5715aa8494bb" />
 
-
-## 🎥 Demo Video
-
-YOUTUBE: https://youtu.be/hyPdoXk4sH4
-
-## 🔮 Future Enhancements
-
-- AI-powered resume builder and performance insights  
-- Integration with external APIs for project data tracking  
-- Custom dashboards and analytics widgets  
-- Light/Dark mode toggle for personalized themes  
-- Export portfolio as an interactive PDF  
-- Backend integration for real-time data sync  
-- LLM-based recommendation system for skill improvement  
-- Automated project section updates from GitHub repositories  
-
----
-
-## 🧑‍💻 Auth
-**Shashank Dadhich**  
-Driven by creativity and logic.
-
----
 
 ## 📜 License
 
